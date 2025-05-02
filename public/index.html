@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body class="page-body">
+    <section class="product-section">
+      <div class="product-info">
+        <img class="product-image" src="/static/simple_pant.png" alt="T-Shirt" />
+        <h3 class="product-title">Simple pant</h3>
+        <h5 class="product-price">$19.99</h5>
+      </div>
+
+      <form class="checkout-form" action="/create-checkout-session" method="POST">
+        <input class="quantity-input" type="number" name="quantity" value="1" min="1" />
+        <button class="checkout-button" type="submit">Checkout</button>
+      </form>
+    </section>
+  </body>
+</html>

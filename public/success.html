@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Success</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body class="page-body">
+    <section class="product-section">
+      <h3 class="product-title">Payment Successful</h3>
+      <p>Thank you for your purchase! Your order is being processed.</p>
+      <p><strong>Purchase Date:</strong> {{ purchase_date }}</p>
+      <p><strong>Email:</strong> {{ customer_email }}</p>
+      <p><strong>Name:</strong> {{ customer_name }}</p>
+      <p><strong>Country:</strong> {{ customer_country }}</p>
+      <p><strong>Total Amount:</strong> {{ total_amount }}</p>
+      <p><strong>Card Brand:</strong> {{ card_brand }}</p>
+      <p><strong>Card Last 4 Digitis:</strong> {{ card_last4 }}</p>
+      <p><strong>Card Expiration Date:</strong> {{ card_exp_date }}</p>
+      <a href="/" class="checkout-button">Go Back</a>
+    </section>
+  </body>
+</html>
