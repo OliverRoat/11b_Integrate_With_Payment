@@ -29,7 +29,7 @@ def retrieve_successfull_purchase_details(stripe_session: Session, request: Requ
     payment_method_details = stripe_charge.get("payment_method_details", {})
     card_details = payment_method_details.get("card", {})
     card_brand = card_details.get("brand", "N/A")
-    card_last4 = card_details.get("last4")
+    card_last4 = format_last4_card_number(card_details.get("last4"))
     card_exp_month = card_details.get("exp_month")
     card_exp_year = card_details.get("exp_year")
     card_exp_date = format_card_exp_date(card_exp_month, card_exp_year)
